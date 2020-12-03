@@ -1,0 +1,30 @@
+{
+  "id": "1879133",
+  "name": "Font",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "670677",
+      "name": "验证码",
+      "font_class": "ma",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "10611841",
+      "name": "登录-密码",
+      "font_class": "p",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "10617577",
+      "name": "登录-用户",
+      "font_class": "u",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    }
+  ]
+}
