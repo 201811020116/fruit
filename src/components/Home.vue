@@ -15,7 +15,7 @@
             <el-aside>
                 <!--侧边栏菜单区-->
                 <el-menu
-                        background-color="#333744"
+                        background-color="slateblue"
                         text-color="#fff"
                         active-text-color="#409EFF"
                         unique-opened
@@ -109,7 +109,7 @@
     }
 
     .el-aside {
-        background-color: #333744;
+        background-color: slateblue;
         .el-menu {
             border-right: none;
         }

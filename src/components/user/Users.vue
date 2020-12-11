@@ -1,12 +1,10 @@
 <template>
     <div>
-
         <el-breadcrumb separator-class="el-icon-arrow-right">
             <el-breadcrumb-item :to="{ path: '/home' }">首页</el-breadcrumb-item>
             <el-breadcrumb-item>用户管理</el-breadcrumb-item>
             <el-breadcrumb-item>用户列表</el-breadcrumb-item>
         </el-breadcrumb>
-
         <!--卡片视图区-->
         <el-card>
             <!--搜索与添加区-->
@@ -17,7 +15,7 @@
                     </el-input>
                 </el-col>
                 <el-col :span="4">
-                    <el-button type="primary" @click="addDialogVisible=true">添加用户</el-button>
+                    <el-button type="primary" @click="add">添加用户</el-button>
                 </el-col>
             </el-row>
 
@@ -279,7 +277,7 @@
             },
             // 根据id删除用户信息
             async removeUserById(id) {
-                const confirmResult = await this.$confirm('此操作将永久删除该用户, 是否继续?', '提示', {
+                const confirmResult = await this.$confirm('确定永久删除该用户吗?', '提示', {
                     confirmButtonText: '确定',
                     cancelButtonText: '取消',
                     type: 'warning'
