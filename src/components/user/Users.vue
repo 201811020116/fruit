@@ -15,7 +15,7 @@
                     </el-input>
                 </el-col>
                 <el-col :span="4">
-                    <el-button type="primary" @click="add">添加用户</el-button>
+                    <el-button type="primary" @click="addDialogVisible=true">添加用户</el-button>
                 </el-col>
             </el-row>
 
@@ -258,6 +258,7 @@
             // 修改用户信息并提交
             editUserInfo() {
                 this.$refs.editFormRef.validate(async valid => {
+                    console.log(this.editForm.id)
                     if (!valid) return
                     //验证通过后，可以发起修改用户的网络请求
                     const {data: res} = await this.$http.put('users/' + this.editForm.id, {
